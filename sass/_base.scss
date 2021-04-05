@@ -59,17 +59,20 @@ body {
   background-repeat: no-repeat;
 }
 .container {
-  margin: 5rem auto;
+  margin: 13rem auto;
   position: relative;
 
   background-color: #fff;
   border-radius: 18px;
   max-width: 900px;
+  box-shadow: 0px 40px 50px -15px rgba(0, 0, 0, 0.4);
+
+  ///* offset-x | offset-y | blur-radius | optional spread / color */
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @media only screen and (max-width: 950px) {
-    margin: 15rem 2rem;
+    margin: 15rem 2rem 5rem;
     grid-template-columns: max-content;
     justify-items: center;
     align-items: center;
