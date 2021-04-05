@@ -1,0 +1,176 @@
+:root {
+  --color-text-primary: hsl(238, 29%, 16%);
+  --color-text-primary-soft: hsl(14, 88%, 65%);
+
+  --color-text-secondary: hsl(237, 12%, 33%);
+  --color-text-secondary-soft: hsl(240, 6%, 50%);
+
+  --color-bg-primary-1: hsl(273, 75%, 66%);
+  --color-bg-primary-2: hsl(240, 73%, 65%);
+
+  --color-dividers: hsl(240, 5%, 91%);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  --line: 1px solid var(--color-dividers);
+}
+
+/////////////////////////////
+//sass variables - css var do not work in media queries
+
+$bp-desktop: 90em; //1440px / 16 = 90em
+$bp-largest: 75em; //1200px /16 = 75em
+$bp-large: 68.75em; //1100px/16px = 68.75em
+$bp-medium: 59.375em; //950px/16px = 59.375em
+$bp-small: 37.5em; //600px/16px = 37.5em
+$bp-smallest: 31.25em; //500px/16px = 31.25em
+$bp-mobile: 23.4375em; //375px/16px = 23.4375em
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px / 10px/16px = 62.5%
+
+  @media only screen and (max-width: 400px) {
+    font-size: 50%;
+  }
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary-soft);
+  background-image: linear-gradient(
+    var(--color-bg-primary-1),
+    var(--color-bg-primary-2)
+  );
+  background-repeat: no-repeat;
+}
+.container {
+  margin: 5rem auto;
+  position: relative;
+
+  background-color: #fff;
+  border-radius: 18px;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media only screen and (max-width: 950px) {
+    margin: 15rem 2rem;
+    grid-template-columns: max-content;
+    justify-items: center;
+    align-items: center;
+
+    .img-faq {
+      overflow: visible;
+      background-image: none;
+      grid-column: -1;
+      min-height: 10rem;
+      position: relative;
+    }
+
+    .faq-section {
+      grid-column: -1;
+
+      padding-left: 3rem;
+      padding-right: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-box {
+      display: none;
+    }
+
+    .img-woman {
+      display: none;
+    }
+
+    .img-woman-mobile {
+      display: block;
+      position: absolute;
+      width: 30rem;
+      top: -12rem;
+      left: -17rem;
+    }
+
+    .img-bg-mobile {
+      display: block;
+      position: absolute;
+      width: 28rem;
+      top: 0;
+      left: -15rem;
+    }
+  }
+}
+
+.img-faq {
+  overflow: hidden;
+  background-image: url(../img/bg-pattern-desktop.svg);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position-x: -53rem;
+  background-position-y: -22rem;
+}
+
+.img-bg-mobile {
+  display: none;
+}
+
+.img-woman-mobile {
+  display: none;
+}
+.img-woman {
+  position: relative;
+  width: 100%;
+  bottom: -11rem;
+  left: -8.5rem;
+}
+
+.img-box {
+  display: inline-block;
+  position: absolute;
+  width: 16rem;
+  top: 24rem;
+  left: -7.7rem;
+  z-index: 1000;
+}
+
+.faq-section {
+  grid-column: 2 / -1;
+  margin-top: 7rem;
+}
+
+.faq-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--color-text-primary);
+  margin-bottom: 2rem;
+  .span {
+    margin: 0 2rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: inherit;
+}
