@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="img-box" src="img/illustration-box-desktop.svg" alt="" />
+      <section class="img-faq">
+        <img
+          class="img-woman"
+          src="img/illustration-woman-online-desktop.svg"
+          alt=""
+        />
+        <img
+          class="img-woman-mobile"
+          src="img/illustration-woman-online-mobile.svg"
+          alt=""
+        />
+        <img class="img-bg-mobile" src="img/bg-pattern-mobile.svg" alt="" />
+      </section>
+      <section class="faq-section">
+        <h1 class="faq-heading">faq</h1>
+        <div class="accordian">
+          <div class="tab">
+            <input id="tab-1" type="checkbox" class="tab__checkbox" />
+            <label for="tab-1" class="tab__label label-1"
+              >How many team members can I invite?
+              <span
+                ><img
+                  src="img/icon-arrow-down.svg"
+                  alt="Down toggle"
+                  class="tab__toggle"
+              /></span>
+            </label>
+
+            <div class="tab__content">
+              <div class="tab__inner">
+                <p class="tab__text">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <input
+              id="tab-2"
+              type="checkbox"
+              class="tab__checkbox"
+              checked="checked"
+            />
+            <label for="tab-2" class="tab__label"
+              >What is the maximum file upload size?
+              <span
+                ><img
+                  src="img/icon-arrow-down.svg"
+                  alt="Down toggle"
+                  class="tab__toggle"
+              /></span>
+            </label>
+
+            <div class="tab__content">
+              <div class="tab__inner">
+                <p class="tab__text">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <input id="tab-3" type="checkbox" class="tab__checkbox" />
+            <label for="tab-3" class="tab__label"
+              >How do I reset my password?
+              <span
+                ><img
+                  src="img/icon-arrow-down.svg"
+                  alt="Down toggle"
+                  class="tab__toggle"
+              /></span>
+            </label>
+
+            <div class="tab__content">
+              <div class="tab__inner">
+                <p class="tab__text">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <input id="tab-4" type="checkbox" class="tab__checkbox" />
+            <label for="tab-4" class="tab__label"
+              >Can I cancel my subscription?
+              <span
+                ><img
+                  src="img/icon-arrow-down.svg"
+                  alt="Down toggle"
+                  class="tab__toggle"
+              /></span>
+            </label>
+
+            <div class="tab__content">
+              <div class="tab__inner">
+                <p class="tab__text">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <input id="tab-5" type="checkbox" class="tab__checkbox" />
+            <label for="tab-5" class="tab__label"
+              >Do you provide additional support?
+              <span
+                ><img
+                  src="img/icon-arrow-down.svg"
+                  alt="Down toggle"
+                  class="tab__toggle"
+              /></span>
+            </label>
+
+            <div class="tab__content">
+              <div class="tab__inner">
+                <p class="tab__text">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
